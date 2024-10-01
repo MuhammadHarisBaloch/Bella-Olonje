@@ -76,17 +76,6 @@ export default function Dashboard() {
       </Stack>
     </>
   );
-  function shadow(
-    arg0: number,
-    px: any,
-    arg2: number,
-    px1: any,
-    arg4: number,
-    px2: any,
-    arg6: any
-  ) {
-    throw new Error("Function not implemented.");
-  }
 
   return (
     <>
