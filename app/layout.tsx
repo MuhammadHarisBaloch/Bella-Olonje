@@ -3,15 +3,16 @@
 import "@mantine/core/styles.css";
 
 import { ColorSchemeScript, createTheme, MantineProvider } from "@mantine/core";
+import Logos from "@/Constants/Logos";
 
 const theme = createTheme({
-  fontFamily: 'Poppins, sans-serif',
-  fontFamilyMonospace: 'Poppins, ',
-  headings: { fontFamily: 'Poppins ' },
+  fontFamily: "Poppins, sans-serif",
+  fontFamilyMonospace: "Poppins, ",
+  headings: { fontFamily: "Poppins " },
 });
 
 export const metadata = {
-  title: "My Mantine app",
+  title: "Bella Olonje",
   description: "I have followed setup instructions carefully",
 };
 
@@ -23,13 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href={Logos.TabLogo} type="Logos/tab-logo" />
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider theme={theme}
-        >
-          {children}
-        </MantineProvider>
+        <MantineProvider theme={theme}>{children}</MantineProvider>
       </body>
     </html>
   );
